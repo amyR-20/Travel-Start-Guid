@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Travel Starter Guide</title>
+
+  <meta name="description" content="Página de contacto de Travel Starter Guide.">
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" class="logo" alt="Logo Travel Starter Guide">
+        Travel Starter Guide
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="empieza.html">Empieza aquí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="guide.html">Guía</a>
+          </li>
+
+           <li class="nav-item">
+            <a class="nav-link" href="destinos.html">Destinos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Noticias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="links.html">Enlaces</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <button onclick="modoOscuro()" class="btn btn-outline-light ms-3">
+              <i class="bi bi-moon"></i> Modo oscuro
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="page-header text-white text-center">
+    <div class="container">
+      <h1>Contáctanos</h1>
+      <p>Si tienes dudas o quieres más información, escríbenos.</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <h2>Información de contacto</h2>
+            <p>Puedes comunicarte con nosotros por correo o por teléfono.</p>
+
+            <div class="contact-info-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Santo Domingo, República Dominicana</span>
+            </div>
+
+            <div class="contact-info-item">
+              <i class="bi bi-envelope-fill"></i>
+              <span>travelstarterguide@email.com</span>
+            </div>
+
+            <div class="contact-info-item">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+1 809 123 4567</span>
+            </div>
+
+            <div class="contact-info-item">
+              <i class="bi bi-clock-fill"></i>
+              <span>Lunes a viernes, 8:00 AM - 5:00 PM</span>
+            </div>
+
+            <a href="mailto:travelstarterguide@email.com" class="btn contact-btn mt-3">
+              <i class="bi bi-envelope-paper-fill me-2"></i>Enviar correo
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <h2>Envíanos un mensaje</h2>
+            <form>
+              <form onsubmit="enviarFormulario(event)">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="correo" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje</label>
+    <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+  </div>
+
+  <button type="submit" class="btn contact-btn">
+    Enviar mensaje
+  </button>
+          </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- FOOTER -->
+  <footer class="footer">
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h4 class="footer-logo">Travel Starter Guide</h4>
+<p>
+Tu guía para empezar a explorar el mundo y organizar tu primer viaje.
+</p>
+</div>
+
+<div class="col-md-4">
+<h5>Navegación</h5>
+<ul class="footer-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="empieza.html">Empieza aquí</a></li>
+<li><a href="guide.html">Guía</a></li>
+<li><a href="news.html">Noticias</a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>Síguenos</h5>
+
+<div class="footer-social">
+<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+
+<p class="footer-email">
+<a href="mailto:travelstarterguide@email.com">
+<i class="bi bi-envelope"></i> travelstarterguide@email.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="footer-copy">© 2026 Travel Starter Guide</p>
+
+</div>
+</footer>
+  <!-- MODAL PRIVACIDAD -->
+  <div class="modal fade" id="privacidad">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Política de Privacidad</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            Este sitio web es educativo y no almacena información personal
+            de los usuarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

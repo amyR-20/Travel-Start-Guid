@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consejos de Viaje | Travel Starter Guide</title>
+  <meta name="description" content="Consejos esenciales de viaje para organizar mejor tu aventura, ahorrar dinero y viajar con seguridad.">
+  <meta name="keywords" content="viajes, consejos de viaje, turismo, guía de viaje, Travel Starter Guide">
+  <meta name="author" content="Amy">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <body class="pagina-consejos"> 
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container">
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" class="logo" alt="Logo">
+        Travel Starter Guide
+      </a>
+
+      <!-- BOTÓN MÓVIL -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <!-- MENÚ -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="guide.html">Guía</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="destinos.html">Destinos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- BARRA DE BÚSQUEDA -->
+        <form class="d-flex buscador" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar destinos..." id="busqueda">
+          <button class="btn btn-buscar" type="button" onclick="buscarDestino()">Buscar</button>
+        </form>
+
+        <!-- BOTÓN MODO OSCURO -->
+        <button onclick="modoOscuro()" class="btn btn-outline-light ms-3" type="button">
+          <i class="bi bi-moon"></i>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-consejos">
+    <div class="container hero-content">
+      <span class="badge-viaje">Consejos esenciales para viajar mejor</span>
+      <h1>Prepárate para una experiencia segura, inteligente y memorable</h1>
+      <p>
+        Viajar no solo significa elegir un destino. También implica planificar, cuidar tu presupuesto,
+        organizar documentos, proteger tu salud y aprovechar al máximo cada momento. Aquí encontrarás
+        recomendaciones clave para que tu aventura sea mucho más fácil y emocionante.
+      </p>
+      <a href="#consejos-importantes" class="btn btn-hero">Ver consejos</a>
+    </div>
+    <div class="hero-overlay"></div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro-viaje">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-6 fade-up">
+          <h2>¿Por qué son importantes los consejos de viaje?</h2>
+          <p>
+            Muchos problemas durante un viaje ocurren por falta de organización. Desde olvidar documentos
+            hasta gastar más dinero del necesario, pequeños errores pueden afectar toda la experiencia.
+            Por eso, conocer recomendaciones útiles antes de salir puede ayudarte a viajar con mayor seguridad,
+            comodidad y confianza.
+          </p>
+          <p>
+            En esta guía reunimos consejos prácticos que sirven tanto para quienes hacen su primer viaje
+            como para quienes ya tienen experiencia y desean mejorar su planificación.
+          </p>
+        </div>
+
+        <div class="col-lg-6 fade-up">
+          <div class="info-box-principal">
+
+            <div class="info-item">
+              <i class="bi bi-passport"></i>
+              <div>
+                <h4>Documentación</h4>
+                <p>Revisa pasaporte, visa, reservas y seguro antes de salir.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-cash-coin"></i>
+              <div>
+                <h4>Presupuesto</h4>
+                <p>Planea gastos de transporte, comida, alojamiento y emergencias.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-shield-check"></i>
+              <div>
+                <h4>Seguridad</h4>
+                <p>Protege tus pertenencias, evita zonas de riesgo y guarda copias digitales.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bi bi-map"></i>
+              <div>
+                <h4>Organización</h4>
+                <p>Haz itinerarios realistas y deja tiempo para descansar y disfrutar.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID 1 -->
+  <section id="consejos-importantes" class="consejos-section">
+    <div class="container">
+
+      <div class="text-center section-title fade-up">
+        <h2>Consejos más importantes antes de viajar</h2>
+        <p>
+          Estos son algunos de los aspectos que no debes ignorar al preparar tu viaje.
+        </p>
+      </div>
+
+      <div class="row g-4 consejos-grid">
+
+        <div class="col-md-6 col-xl-4 fade-up">
+          <div class="consejo-card">
+            <div class="icon-circle"><i class="bi bi-file-earmark-text"></i></div>
+            <h3>1. Verifica tus documentos</h3>
+            <p>
+              Antes de viajar, confirma que tu pasaporte esté vigente, que tus boletos sean correctos
+              y que tengas las reservas impresas o guardadas en el celular. También es importante
+              llevar una copia digital de tus documentos más importantes.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 fade-up">
+          <div class="consejo-card">
+            <div class="icon-circle"><i class="bi bi-wallet2"></i></div>
+            <h3>2. Define un presupuesto</h3>
+            <p>
+              Organiza tus gastos en transporte, alojamiento, alimentación, entradas turísticas y compras.
+              Separar una parte del dinero para imprevistos es una decisión inteligente que puede ayudarte
+              en situaciones inesperadas.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 fade-up">
+          <div class="consejo-card">
+            <div class="icon-circle"><i class="bi bi-suitcase-lg"></i></div>
+            <h3>3. Empaca con estrategia</h3>
+            <p>
+              No lleves maletas excesivamente pesadas. Lo ideal es elegir ropa cómoda, adecuada al clima
+              y combinar prendas que puedas usar varias veces. Nunca olvides tus artículos personales,
+              medicamentos y cargadores.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 fade-up">
+          <div class="consejo-card">
+            <div class="icon-circle"><i class="bi bi-geo-alt"></i></div>
+            <h3>4. Investiga el destino</h3>
+            <p>
+              Conocer la cultura, el clima, la moneda, el idioma y las costumbres del lugar puede evitar
+              confusiones y ayudarte a disfrutar más la experiencia. También puedes identificar zonas seguras,
+              restaurantes recomendados y medios de transporte útiles.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 fade-up">
+          <div class="consejo-card">
+            <div class="icon-circle"><i class="bi bi-heart-pulse"></i></div>
+            <h3>5. Cuida tu salud</h3>
+            <p>
+              Lleva medicamentos básicos, mantente hidratado y verifica si necesitas vacunas o seguro médico
+              para tu destino. Dormir bien y comer de forma equilibrada también influye mucho en tu energía
+              durante el viaje.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 fade-up">
+          <div class="consejo-card">
+            <div class="icon-circle"><i class="bi bi-phone"></i></div>
+            <h3>6. Mantén tu teléfono preparado</h3>
+            <p>
+              Descarga mapas offline, guarda direcciones importantes, instala aplicaciones de transporte
+              y verifica tu conexión a internet o plan de roaming. El celular puede ser una de tus mejores
+              herramientas durante el viaje.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GRID 2 -->
+  <section class="tips-avanzados">
+    <div class="container">
+
+      <div class="text-center section-title fade-up">
+        <h2>Recomendaciones clave durante el viaje</h2>
+        <p>
+          Además de prepararte bien, también debes tomar buenas decisiones mientras estás en tu destino.
+        </p>
+      </div>
+
+      <div class="grid-doble">
+
+        <div class="tip-box glass-card fade-left">
+          <h3><i class="bi bi-lightbulb"></i> Hábitos inteligentes de viaje</h3>
+          <ul>
+            <li>Llega temprano al aeropuerto, terminal o estación para evitar contratiempos.</li>
+            <li>Guarda tu dinero en diferentes lugares y no muestres objetos de valor innecesariamente.</li>
+            <li>Usa ropa y calzado cómodos para caminar durante varias horas.</li>
+            <li>Respeta la cultura y normas del lugar que visitas.</li>
+            <li>Pregunta precios antes de comprar o usar transporte privado.</li>
+            <li>Mantén tus dispositivos con batería suficiente o lleva power bank.</li>
+            <li>Comparte tu ubicación o itinerario con un familiar de confianza.</li>
+            <li>Aprende frases básicas del idioma si viajas a otro país.</li>
+          </ul>
+        </div>
+
+        <div class="tip-box glass-card fade-right">
+          <h3><i class="bi bi-exclamation-triangle"></i> Errores que debes evitar</h3>
+          <ul>
+            <li>No revisar la vigencia del pasaporte antes de comprar boletos.</li>
+            <li>Llevar demasiado equipaje innecesario.</li>
+            <li>Gastar todo el presupuesto en los primeros días.</li>
+            <li>No investigar el clima del destino.</li>
+            <li>Descuidar tus pertenencias en sitios muy concurridos.</li>
+            <li>No tener copias digitales de reservas y documentos.</li>
+            <li>Improvisar completamente sin conocer rutas básicas.</li>
+            <li>Confiar en cualquier oferta sin verificar su seguridad.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTRA INFO -->
+  <section class="extra-consejos">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-4 fade-up">
+          <div class="extra-card">
+            <h3>Consejo sobre alojamiento</h3>
+            <p>
+              Elige lugares bien ubicados, seguros y con buenas reseñas. A veces pagar un poco más por
+              una mejor localización te ayuda a ahorrar tiempo y dinero en transporte.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 fade-up">
+          <div class="extra-card">
+            <h3>Consejo sobre transporte</h3>
+            <p>
+              Infórmate sobre el sistema de transporte público del destino. En muchos países resulta más
+              económico y práctico usar trenes, autobuses o tarjetas recargables que taxis.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 fade-up">
+          <div class="extra-card">
+            <h3>Consejo sobre experiencias</h3>
+            <p>
+              No llenes tu agenda en exceso. Deja espacio para explorar, descansar, tomar fotos y disfrutar
+              momentos espontáneos. Un viaje también se disfruta mejor sin tanta presión.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-final">
+    <div class="container text-center fade-up">
+      <h2>Tu viaje empieza con una buena planificación</h2>
+      <p>
+        Mientras mejor te prepares, más tranquilo y emocionante será tu recorrido.
+        Recuerda: organización, seguridad y actitud positiva son la clave para disfrutar.
+      </p>
+      <a href="destinos.html" class="btn btn-cta">Explorar destinos</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <h4 class="footer-logo">Travel Starter Guide</h4>
+          <p>
+            Tu guía para empezar a explorar el mundo y organizar tu primer viaje.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Navegación</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="empieza.html">Empieza aquí</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="links.html">Enlaces</a></li>
+            <li><a href="privacy.html">Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+          </div>
+
+          <p class="footer-email">
+            <a href="mailto:travelstarterguide@email.com">
+              <i class="bi bi-envelope"></i> travelstarterguide@email.com
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <hr>
+      <p class="footer-copy">© 2026 Travel Starter Guide</p>
+    </div>
+  </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

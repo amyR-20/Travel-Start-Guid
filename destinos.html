@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guía de Viaje | Travel Starter Guide</title>
+
+  <meta name="description" content="Guía completa con consejos, checklist, documentos, presupuesto, seguridad y recomendaciones para organizar tu primer viaje.">
+
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" class="logo" alt="Logo Travel Starter Guide">
+        Travel Starter Guide
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="empieza.html">Empieza aquí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="guide.html">Guía</a>
+          </li>
+           
+           <li class="nav-item">
+            <a class="nav-link" href="destinos.html">Destinos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Noticias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="links.html">Enlaces</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <button onclick="modoOscuro()" class="btn btn-outline-light ms-3">
+              <i class="bi bi-moon"></i> Modo oscuro
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="container my-5">
+
+<div class="text-center mb-4">
+<h2>Destinos imperdibles para tu próxima aventura</h2>
+<p>
+Descubre algunos de los lugares más fascinantes del mundo y conoce un poco
+sobre su historia, sus atractivos turísticos y lo que los hace especiales.
+</p>
+</div>
+
+<div class="row g-4">
+
+<!-- JAPÓN -->
+<div class="col-md-6 col-lg-4">
+<div class="card destino-card h-100 shadow-sm">
+<img src="images/japon.jpg" alt="Japón" class="card-img-top slider-img japon-slider">
+<div class="card-body text-center">
+<h3 class="card-title">Japón</h3>
+<p class="card-text">
+Tradición, tecnología y paisajes impresionantes en un solo destino.
+</p>
+<a href="#japon" class="btn btn-destino">Descubrir más</a>
+</div>
+</div>
+</div>
+
+<!-- ITALIA -->
+<div class="col-md-6 col-lg-4">
+<div class="card destino-card h-100 shadow-sm">
+<img src="images/italia.jpg" alt="Italia" class="card-img-top slider-img">
+<div class="card-body text-center">
+<h3 class="card-title">Italia</h3>
+<p class="card-text">
+Historia, arte y gastronomía inolvidable en cada rincón.
+</p>
+<a href="#italia" class="btn btn-destino">Descubrir más</a>
+</div>
+</div>
+</div>
+
+<!-- SUECIA -->
+<div class="col-md-6 col-lg-4">
+<div class="card destino-card h-100 shadow-sm">
+<img src="images/suecia.jpg" alt="Suecia" class="card-img-top slider-img">
+<div class="card-body text-center">
+<h3 class="card-title">Suecia</h3>
+<p class="card-text">
+Naturaleza, serenidad y belleza escandinava.
+</p>
+<a href="#suecia" class="btn btn-destino">Descubrir más</a>
+</div>
+</div>
+</div>
+
+<!-- ALEMANIA -->
+<div class="col-md-6 col-lg-4">
+<div class="card destino-card h-100 shadow-sm">
+<img src="images/alemania.jpg" alt="Alemania" class="card-img-top slider-img">
+<div class="card-body text-center">
+<h3 class="card-title">Alemania</h3>
+<p class="card-text">
+Cultura, castillos y ciudades históricas llenas de encanto.
+</p>
+<a href="#alemania" class="btn btn-destino">Descubrir más</a>
+</div>
+</div>
+</div>
+
+<!-- AUSTRALIA -->
+<div class="col-md-6 col-lg-4">
+<div class="card destino-card h-100 shadow-sm">
+<img src="images/australia.jpg" alt="Australia" class="card-img-top slider-img australia-slider">
+<div class="card-body text-center">
+<h3 class="card-title">Australia</h3>
+<p class="card-text">
+Aventura, playas y naturaleza en un destino inolvidable.
+</p>
+<a href="#australia" class="btn btn-destino">Descubrir más</a>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="container my-5 seccion-destinos-info">
+
+  <!-- JAPÓN -->
+  <div id="japon" class="destino-detalle mb-5">
+    <h3 class="destino-titulo">Japón</h3>
+    <img src="images/japon.2.jpg" alt="Japón" class="img-fluid destino-img">
+
+    <div class="destino-texto">
+      <p>
+        Japón es uno de los destinos más fascinantes del mundo por su increíble mezcla de tradición y modernidad. 
+        Es un país donde conviven antiguos templos, jardines históricos y costumbres milenarias con ciudades modernas 
+        llenas de tecnología, luces y una vida urbana muy activa.
+      </p>
+
+      <p>
+        Entre sus lugares más famosos se encuentran Tokio, una ciudad vibrante conocida por sus rascacielos y su cultura 
+        moderna; Kioto, reconocida por sus templos, jardines y tradiciones; y el Monte Fuji, uno de los paisajes más 
+        icónicos del país.
+      </p>
+
+      <p>
+        Japón también destaca por su gastronomía, sus festivales tradicionales, su transporte organizado y la amabilidad 
+        de su gente. Es un destino perfecto para quienes desean descubrir una cultura diferente y experimentar una mezcla 
+        única entre historia y tecnología.
+      </p>
+    </div>
+  </div>
+
+  <!-- ITALIA -->
+  <div id="italia" class="destino-detalle mb-5">
+    <h3 class="destino-titulo">Italia</h3>
+    <img src="images/italia.jpg" alt="Italia" class="img-fluid destino-img">
+
+    <div class="destino-texto">
+      <p>
+        Italia es uno de los países más visitados del mundo gracias a su enorme riqueza histórica, artística y cultural. 
+        Sus ciudades están llenas de monumentos, plazas antiguas y edificios que reflejan siglos de historia.
+      </p>
+
+      <p>
+        Roma, la capital, es famosa por el Coliseo, el Vaticano y sus restos del Imperio Romano. Venecia es conocida por 
+        sus canales y su ambiente romántico, mientras que Florencia es considerada una de las ciudades más importantes 
+        del arte renacentista.
+      </p>
+
+      <p>
+        Italia también es famosa por su gastronomía, con platos tradicionales como la pizza, la pasta y el gelato. 
+        Su combinación de historia, arquitectura, cultura y comida deliciosa la convierte en un destino ideal para 
+        viajeros de todo el mundo.
+      </p>
+    </div>
+  </div>
+
+  <!-- SUECIA -->
+  <div id="suecia" class="destino-detalle mb-5">
+    <h3 class="destino-titulo">Suecia</h3>
+    <img src="images/suecia.2.jpg" alt="Suecia" class="img-fluid destino-img">
+
+    <div class="destino-texto">
+      <p>
+        Suecia es un país conocido por su tranquilidad, su organización y sus hermosos paisajes naturales. 
+        Sus ciudades combinan arquitectura moderna, espacios verdes y una alta calidad de vida.
+      </p>
+
+      <p>
+        Estocolmo, la capital, está construida sobre varias islas conectadas por puentes, lo que le da un aspecto único. 
+        Además, el país cuenta con extensos bosques, lagos y paisajes naturales impresionantes.
+      </p>
+
+      <p>
+        En el norte de Suecia es posible observar auroras boreales durante ciertas épocas del año. 
+        Su combinación de naturaleza, diseño moderno y cultura nórdica lo convierte en un destino 
+        ideal para quienes buscan tranquilidad y belleza natural.
+      </p>
+    </div>
+  </div>
+
+  <!-- ALEMANIA -->
+  <div id="alemania" class="destino-detalle mb-5">
+    <h3 class="destino-titulo">Alemania</h3>
+    <img src="images/alemania.jpg" alt="Alemania" class="img-fluid destino-img">
+
+    <div class="destino-texto">
+      <p>
+        Alemania es un país lleno de historia, cultura y ciudades modernas. 
+        Es conocido por sus castillos, museos, arquitectura histórica y su importancia en la historia europea.
+      </p>
+
+      <p>
+        Berlín, la capital, es una ciudad moderna con un pasado histórico muy importante. 
+        Múnich destaca por su arquitectura, sus plazas y sus festivales tradicionales, mientras que el castillo 
+        de Neuschwanstein es uno de los más visitados del país.
+      </p>
+
+      <p>
+        Alemania también es famosa por sus festivales, su música clásica, su ciencia y su desarrollo tecnológico. 
+        Es un destino ideal para quienes desean aprender sobre historia y explorar ciudades llenas de cultura.
+      </p>
+    </div>
+  </div>
+
+  <!-- AUSTRALIA -->
+  <div id="australia" class="destino-detalle mb-5">
+    <h3 class="destino-titulo">Australia</h3>
+    <img src="images/australia.2.jpg" alt="Australia" class="img-fluid destino-img">
+
+    <div class="destino-texto">
+      <p>
+        Australia es un destino turístico muy popular gracias a su naturaleza, sus playas y sus ciudades modernas. 
+        Es un país ideal para quienes disfrutan de actividades al aire libre y paisajes espectaculares.
+      </p>
+
+      <p>
+        Sídney es famosa por su Ópera y su hermoso puerto, mientras que Melbourne destaca por su ambiente cultural 
+        y artístico. También se encuentra la Gran Barrera de Coral, uno de los ecosistemas marinos más impresionantes 
+        del mundo.
+      </p>
+
+      <p>
+        Australia también posee una fauna única, con animales como canguros y koalas. 
+        Su combinación de naturaleza, cultura y ciudades modernas la convierte en un destino perfecto 
+        para quienes buscan aventura y experiencias inolvidables.
+      </p>
+    </div>
+  </div>
+
+</section>
+<!-- FOOTER -->
+  <footer class="footer">
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h4 class="footer-logo">Travel Starter Guide</h4>
+<p>
+Tu guía para empezar a explorar el mundo y organizar tu primer viaje.
+</p>
+</div>
+
+<div class="col-md-4">
+<h5>Navegación</h5>
+<ul class="footer-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="empieza.html">Empieza aquí</a></li>
+<li><a href="guide.html">Guía</a></li>
+<li><a href="news.html">Noticias</a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>Síguenos</h5>
+
+<div class="footer-social">
+<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+
+<p class="footer-email">
+<a href="mailto:travelstarterguide@email.com">
+<i class="bi bi-envelope"></i> travelstarterguide@email.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="footer-copy">© 2026 Travel Starter Guide</p>
+
+</div>
+</footer>
+  <!-- MODAL PRIVACIDAD -->
+  <div class="modal fade" id="privacidad">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Política de Privacidad</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            Este sitio web es educativo y no almacena información personal
+            de los usuarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+<section id="japon"></section>
+<section id="italia"></section>
+<section id="suecia"></section>
+<section id="alemania"></section>
+<section id="australia"></section>
+</body>
+</html>

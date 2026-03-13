@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travel Starter Guide</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
+
+  <!-- METADATA SEO -->
+  <meta name="description" content="Guía para empezar a explorar el mundo y organizar tu primer viaje.">
+  <meta name="keywords" content="viajes, turismo, destinos, travel guide">
+  <meta name="author" content="Amy">
+  <meta name="robots" content="index, follow">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- BOOTSTRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+ <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+<div class="container">
+
+<!-- LOGO -->
+<a class="navbar-brand" href="index.html">
+<img src="images/logo.png" class="logo" alt="Logo">
+Travel Starter Guide
+</a>
+
+<!-- BOTON MOVIL -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<!-- MENU -->
+<ul class="navbar-nav me-auto">
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="guide.html">Guía</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="destinos.html">Destinos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contacto</a>
+</li>
+
+</ul>
+
+<!-- BARRA DE BUSQUEDA -->
+<form class="d-flex buscador" role="search" onsubmit="buscarDestino(event)">
+  <input class="form-control me-2" type="search" placeholder="Buscar destinos..." id="busqueda">
+  <button class="btn btn-buscar" type="submit">Buscar</button>
+</form>
+
+<!-- BOTON MODO OSCURO -->
+<button onclick="modoOscuro()" class="btn btn-outline-light ms-3">
+<i class="bi bi-moon"></i>
+</button>
+
+</div>
+</div>
+</nav>
+  <!-- HERO -->
+
+  <header class="hero">
+    <div class="hero-text">
+<h1>TU GUÍA PARA EMPEZAR <br> A EXPLORAR EL MUNDO</h1>
+
+      <p>
+        Aprende sobre turismo, organiza tu primer viaje
+        y conoce destinos interesantes.
+      </p>
+
+      <a href="empieza.html" class="btn btn-primary">
+        EMPIEZA AQUÍ
+      </a>
+    </div>
+  </header>
+
+  <!-- DESTINOS EN TARJETAS -->
+  <section class="seccion-destinos container mt-5">
+    <h2 class="text-center mb-4">Explora algunos destinos</h2>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card tarjeta">
+          <img src="images/japon.jpg" class="card-img-top imagen-scroll" alt="Japón">
+          <div class="card-body">
+            <h5>Japón</h5>
+            <p>Descubre la cultura y la tecnología de Japón.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card tarjeta">
+          <img src="images/italia.jpg" class="card-img-top imagen-scroll" alt="Italia">
+          <div class="card-body">
+            <h5>Italia</h5>
+            <p>Explora ciudades históricas y deliciosa comida.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card tarjeta">
+          <img src="images/australia.jpg" class="card-img-top imagen-scroll" alt="Australia">
+          <div class="card-body">
+            <h5>Australia</h5>
+            <p>Aventura y naturaleza en un solo lugar.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </section>
+
+  <!-- INTRODUCCIÓN -->
+<section class="container mt-5 intro-viajes">
+
+  <h2 class="text-center mb-4">¿Por qué viajar?</h2>
+
+  <p>
+    Viajar es una de las experiencias más enriquecedoras que una persona puede vivir.
+    No solo permite conocer nuevos lugares, sino también descubrir diferentes culturas,
+    tradiciones y formas de vida que amplían nuestra manera de ver el mundo.
+  </p>
+
+  <p>
+    Cada destino ofrece algo único: desde ciudades modernas llenas de tecnología,
+    hasta pueblos históricos con siglos de tradición. Al viajar, las personas tienen
+    la oportunidad de probar nuevas comidas, escuchar otros idiomas y conocer
+    historias que forman parte de la identidad de cada país.
+  </p>
+
+  <p>
+    Además, viajar ayuda a desarrollar habilidades personales como la
+    independencia, la organización y la capacidad de adaptarse a situaciones
+    nuevas. Planificar un viaje implica investigar destinos, organizar horarios,
+    preparar documentos y aprender sobre el lugar que se va a visitar.
+  </p>
+
+  <p>
+    En esta guía encontrarás información básica sobre destinos populares,
+    consejos para organizar tu viaje y recomendaciones que pueden ayudarte
+    a disfrutar mejor la experiencia. Ya sea tu primer viaje o uno más en tu
+    lista de aventuras, siempre habrá algo nuevo por descubrir.
+  </p>
+
+ <div class="row mt-5 tarjetas-viaje">
+
+  <div class="col-md-4">
+    <div class="card-viaje">
+      <div class="icono">🌍</div>
+      <h5>Conocer culturas</h5>
+      <p>
+        Viajar permite entender cómo viven las personas en otras partes del
+        mundo, sus tradiciones, festividades y costumbres.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card-viaje card-centro">
+      <div class="icono">✈️</div>
+      <h5>Vivir nuevas experiencias</h5>
+      <p>
+        Cada viaje trae aventuras diferentes: probar comidas típicas,
+        visitar monumentos históricos y explorar paisajes únicos.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card-viaje">
+      <div class="icono">📸</div>
+      <h5>Crear recuerdos</h5>
+      <p>
+        Los viajes dejan recuerdos inolvidables que quedan en fotografías,
+        historias y momentos compartidos con otras personas.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+  <!-- CARRUSEL -->
+  <section class="travel-slider-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Galería de destinos</h2>
+
+      <div class="swiper miSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/japon.mp4" type="video/mp4">
+              </video>
+              <div class="slide-text">
+                <h3>Japón</h3>
+                <p>Tradición, tecnología y paisajes increíbles.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/italia.mp4" type="video/mp4">
+              </video>
+              <div class="slide-text">
+                <h3>Italia</h3>
+                <p>Historia, arte y comida deliciosa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/sweden.mp4" type="video/mp4">
+              </video>
+              <div class="slide-text">
+                <h3>Suecia</h3>
+                <p>Ciudades limpias y naturaleza hermosa.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/Germany.mp4" type="video/mp4">
+              </video>
+              <div class="slide-text">
+                <h3>Alemania</h3>
+                <p>Castillos, cultura y lugares históricos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video class="slide-video" autoplay muted loop playsinline>
+                <source src="videos/Australia.mp4" type="video/mp4">
+              </video>
+              <div class="slide-text">
+                <h3>Australia</h3>
+                <p>Playas, aventura y paisajes únicos.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+function modoOscuro(){
+document.body.classList.toggle("dark-mode");
+}
+</script>
+  <!-- CONSEJOS -->
+  <section class="container mt-5">
+    <h2 class="text-center mb-4">Consejos para tu primer viaje</h2>
+
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <h5>Planifica con tiempo</h5>
+        <p>Investiga tu destino, clima y cultura antes de viajar.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Haz un presupuesto</h5>
+        <p>Calcula gastos de transporte, comida y alojamiento.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Viaja ligero</h5>
+        <p>Lleva solo lo necesario para evitar problemas.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LISTAS -->
+  <section class="container mt-5">
+    <h2>Consejos rápidos para tu primer viaje</h2>
+
+    <h4>Pasos importantes</h4>
+    <ol>
+      <li>Elegir destino</li>
+      <li>Revisar documentos</li>
+      <li>Reservar hotel</li>
+      <li>Comprar boletos</li>
+      <li>Preparar equipaje</li>
+    </ol>
+
+    <h4>Qué llevar en tu equipaje</h4>
+    <ul>
+      <li>Documentos importantes</li>
+      <li>Ropa cómoda</li>
+      <li>Cargador de teléfono</li>
+      <li>Dinero o tarjeta</li>
+      <li>Adaptador de enchufe</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h4 class="footer-logo">Travel Starter Guide</h4>
+<p>
+Tu guía para empezar a explorar el mundo y organizar tu primer viaje.
+</p>
+</div>
+
+<div class="col-md-4">
+<h5>Navegación</h5>
+<ul class="footer-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="empieza.html">Empieza aquí</a></li>
+<li><a href="contact.html">Contacto</a></li>
+<li><a href="links.html">Enlacces</a></li>
+<li><a href="privacy.html">Privacidad</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>Síguenos</h5>
+
+<div class="footer-social">
+<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+
+<p class="footer-email">
+<a href="mailto:travelstarterguide@email.com">
+<i class="bi bi-envelope"></i> travelstarterguide@email.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="footer-copy">© 2026 Travel Starter Guide</p>
+
+</div>
+</footer>
+  <!-- MODAL PRIVACIDAD -->
+  <div class="modal fade" id="privacidad">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Política de Privacidad</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            Este sitio web es educativo y no almacena información personal
+            de los usuarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/script.js"></script>
+
+
+  <script>
+function buscarDestino(){
+
+let destino = document.getElementById("busqueda").value.toLowerCase();
+
+if(destino.includes("japon")){
+window.location.href="destinos.html#japon";
+}
+else if(destino.includes("italia")){
+window.location.href="destinos.html#italia";
+}
+else if(destino.includes("suecia")){
+window.location.href="destinos.html#suecia";
+}
+else if(destino.includes("alemania")){
+window.location.href="destinos.html#alemania";
+}
+else if(destino.includes("australia")){
+window.location.href="destinos.html#australia";
+}
+else{
+alert("Destino no encontrado");
+}
+
+}
+</script>
+
+</body>
+</html>

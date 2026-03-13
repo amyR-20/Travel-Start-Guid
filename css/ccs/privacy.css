@@ -1,0 +1,500 @@
+/* =========================================
+   PRIVACY.HTML - SOLO ESTA PAGINA
+========================================= */
+
+.pagina-privacy{
+  margin: 0;
+  padding-top: 90px;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f9fc;
+  color: #333;
+  line-height: 1.7;
+}
+
+.pagina-privacy *{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVBAR IGUAL AL INDEX
+========================= */
+
+.pagina-privacy .navbar{
+  background: rgba(110, 170, 212, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.pagina-privacy .navbar-brand{
+  color: #ff7a00 !important;
+  font-weight: 700;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.pagina-privacy .logo{
+  height: 70px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.pagina-privacy .nav-link{
+  color: white !important;
+  transition: 0.3s;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.pagina-privacy .nav-link:hover,
+.pagina-privacy .nav-link.active{
+  color: #ff7a00 !important;
+}
+
+.pagina-privacy .btn-outline-light{
+  border: 2px solid #ff7a00;
+  color: white;
+}
+
+.pagina-privacy .btn-outline-light:hover{
+  background: #ff7a00;
+  border: 2px solid #ff7a00;
+  color: white;
+}
+
+.pagina-privacy .buscador{
+  max-width: 320px;
+  width: 100%;
+}
+
+.pagina-privacy .buscador .form-control{
+  border-radius: 8px;
+  border: none;
+  padding: 10px 12px;
+}
+
+.pagina-privacy .buscador .form-control:focus{
+  box-shadow: 0 0 0 0.2rem rgba(255,122,0,0.2);
+}
+
+.pagina-privacy .btn-buscar{
+  background: #ff7a00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  transition: 0.3s;
+}
+
+.pagina-privacy .btn-buscar:hover{
+  background: #e56d00;
+  color: white;
+}
+
+/* =========================
+   ENCABEZADO PRIVACY
+========================= */
+
+.pagina-privacy .encabezado{
+  background:
+    linear-gradient(rgba(10,61,98,0.82), rgba(10,61,98,0.82)),
+    url("../images/travel-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px 80px;
+  margin-bottom: 20px;
+}
+
+.pagina-privacy .encabezado h1{
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pagina-privacy .encabezado p{
+  max-width: 850px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   BARRAS INTERNAS
+========================= */
+
+.pagina-privacy .barra-seccion{
+  display: block;
+  text-decoration: none;
+  padding: 18px 20px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.pagina-privacy .privacidad-link{
+  background: #eaf6ff;
+  color: #0a3d62;
+  border: 2px solid #cce7f7;
+}
+
+.pagina-privacy .seguridad-link{
+  background: #fff4d9;
+  color: #8a5a00;
+  border: 2px solid #ffe29e;
+}
+
+.pagina-privacy .barra-seccion:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   SECCIONES DE CONTENIDO
+========================= */
+
+.pagina-privacy .seccion-info{
+  background: white;
+  border-radius: 18px;
+  padding: 35px 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border: 1px solid #e8eef3;
+}
+
+.pagina-privacy #privacidad,
+.pagina-privacy #seguridad{
+  scroll-margin-top: 120px;
+}
+
+.pagina-privacy .seccion-info h2{
+  color: #094875;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.pagina-privacy .seccion-info h2::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff7a00;
+  margin-top: 8px;
+}
+
+.pagina-privacy .seccion-info h3{
+  color: #0a3d62;
+  font-size: 1.25rem;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.pagina-privacy .seccion-info p{
+  color: #444;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.pagina-privacy .seccion-info strong{
+  color: #0a3d62;
+}
+
+.pagina-privacy .seccion-info code{
+  background: #eef4ff;
+  color: #0a3d62;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* =========================
+   AVISO FINAL
+========================= */
+
+.pagina-privacy .aviso-final{
+  background: #fff7ef;
+  border: 2px solid #ffcf99;
+  border-left: 6px solid #ff7a00;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.pagina-privacy .aviso-final p{
+  margin-bottom: 10px;
+  color: #5a4a38;
+}
+
+.pagina-privacy .aviso-final strong{
+  color: #8a4a00;
+}
+
+/* =========================
+   FOOTER IGUAL AL INDEX
+========================= */
+
+.pagina-privacy .footer{
+  background: #0a3d62;
+  color: white;
+  padding: 50px 0 20px;
+  margin-top: 60px;
+}
+
+.pagina-privacy .footer-logo{
+  color: #ff7a00;
+  font-weight: 700;
+}
+
+.pagina-privacy .footer h5,
+.pagina-privacy .footer h4{
+  margin-bottom: 15px;
+}
+
+.pagina-privacy .footer-links{
+  list-style: none;
+  padding: 0;
+}
+
+.pagina-privacy .footer-links li{
+  margin-bottom: 8px;
+}
+
+.pagina-privacy .footer-links a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pagina-privacy .footer-links a:hover{
+  color: #ff7a00;
+}
+
+.pagina-privacy .footer-social{
+  margin: 15px 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pagina-privacy .footer-social a{
+  font-size: 24px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.pagina-privacy .footer-social a:hover{
+  color: #ff7a00;
+}
+
+.pagina-privacy .footer-email{
+  margin-top: 10px;
+}
+
+.pagina-privacy .footer-email a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pagina-privacy .footer-email a:hover{
+  color: #ff7a00;
+}
+
+.pagina-privacy .footer-copy{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.pagina-privacy .modal-content{
+  border-radius: 14px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.pagina-privacy .modal-header{
+  background: #0a3d62;
+  color: white;
+  border-bottom: none;
+}
+
+.pagina-privacy .modal-body{
+  background: white;
+  color: #333;
+  padding: 22px;
+}
+
+/* =========================
+   BOTON ARRIBA
+========================= */
+
+.pagina-privacy #btnArriba{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: #ff7a00;
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.pagina-privacy #btnArriba:hover{
+  background: #e56d00;
+  transform: translateY(-4px);
+}
+
+/* =========================
+   MODO OSCURO
+========================= */
+
+.pagina-privacy.dark-mode{
+  background: #121212;
+  color: white;
+}
+
+.pagina-privacy.dark-mode .navbar{
+  background: #1e1e1e;
+}
+
+.pagina-privacy.dark-mode .encabezado{
+  background:
+    linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+    url("../images/travel-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.pagina-privacy.dark-mode .seccion-info{
+  background: #1f1f1f;
+  color: white;
+  border-color: #2d2d2d;
+}
+
+.pagina-privacy.dark-mode .seccion-info h2,
+.pagina-privacy.dark-mode .seccion-info h3{
+  color: #ffa94d;
+}
+
+.pagina-privacy.dark-mode .seccion-info p{
+  color: #ddd;
+}
+
+.pagina-privacy.dark-mode .seccion-info strong{
+  color: #fff;
+}
+
+.pagina-privacy.dark-mode .seccion-info code{
+  background: #2c2c2c;
+  color: #ffb366;
+}
+
+.pagina-privacy.dark-mode .privacidad-link{
+  background: #1c2d38;
+  color: #cfefff;
+  border-color: #36566b;
+}
+
+.pagina-privacy.dark-mode .seguridad-link{
+  background: #3b301b;
+  color: #ffe6a6;
+  border-color: #7c6330;
+}
+
+.pagina-privacy.dark-mode .aviso-final{
+  background: #2a2118;
+  border-color: #6b4b1f;
+  border-left-color: #ff7a00;
+}
+
+.pagina-privacy.dark-mode .aviso-final p,
+.pagina-privacy.dark-mode .aviso-final strong{
+  color: #f3dfc8;
+}
+
+.pagina-privacy.dark-mode .footer{
+  background: #1e1e1e;
+}
+
+.pagina-privacy.dark-mode .modal-body{
+  background: #1f1f1f;
+  color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px){
+  .pagina-privacy .logo{
+    height: 55px;
+  }
+
+  .pagina-privacy .buscador{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    max-width: 100%;
+  }
+
+  .pagina-privacy .btn-outline-light{
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px){
+  .pagina-privacy{
+    padding-top: 80px;
+  }
+
+  .pagina-privacy .encabezado{
+    padding: 100px 15px 60px;
+  }
+
+  .pagina-privacy .encabezado h1{
+    font-size: 2rem;
+  }
+
+  .pagina-privacy .encabezado p{
+    font-size: 0.96rem;
+  }
+
+  .pagina-privacy .seccion-info{
+    padding: 24px 18px;
+  }
+
+  .pagina-privacy .seccion-info h2{
+    font-size: 1.6rem;
+  }
+
+  .pagina-privacy .seccion-info h3{
+    font-size: 1.08rem;
+  }
+
+  .pagina-privacy .footer{
+    text-align: center;
+  }
+
+  .pagina-privacy .footer-social{
+    justify-content: center;
+  }
+}

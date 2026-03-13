@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guía de Viaje | Travel Starter Guide</title>
+
+  <meta name="description" content="Guía completa con consejos, checklist, documentos, presupuesto, seguridad y recomendaciones para organizar tu primer viaje.">
+
+  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" class="logo" alt="Logo Travel Starter Guide">
+        Travel Starter Guide
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="empieza.html">Empieza aquí</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="guide.html">Guía</a>
+          </li>
+           
+           <li class="nav-item">
+            <a class="nav-link" href="destinos.html">Destinos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">Noticias</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="links.html">Enlaces</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+
+          <li class="nav-item">
+            <button onclick="modoOscuro()" class="btn btn-outline-light ms-3">
+              <i class="bi bi-moon"></i> Modo oscuro
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <section class="page-header text-white text-center py-5 mt-5">
+    <div class="container pt-5">
+
+      <h1 class="fw-bold">
+        <i class="bi bi-journal-check me-2"></i>
+        Guía para tu primer viaje
+      </h1>
+
+      <p class="lead">
+        Organizar un viaje puede parecer complicado al principio, pero con una buena planificación todo resulta mucho más fácil.
+        En esta guía encontrarás recomendaciones prácticas para preparar tu equipaje, organizar tu presupuesto,
+        revisar tus documentos y sentirte más seguro antes de salir.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Antes de viajar, planifica con calma</h2>
+          <p class="text-muted">
+            Un buen viaje no empieza en el aeropuerto, empieza desde casa. Investigar tu destino,
+            revisar el clima, conocer las costumbres del lugar y organizar lo necesario con tiempo
+            puede evitarte muchos problemas. Mientras mejor preparado estés, más podrás disfrutar
+            la experiencia.
+          </p>
+          <p class="text-muted">
+            También es importante definir el tipo de viaje que deseas hacer: un viaje relajado,
+            una aventura, una escapada familiar o un viaje de estudios. Eso te ayudará a decidir
+            qué llevar, cuánto gastar y qué actividades incluir.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 rounded shadow-sm bg-light">
+            <h4 class="fw-bold mb-3">
+              <i class="bi bi-stars me-2 text-warning"></i>
+              Consejo principal
+            </h4>
+            <p class="mb-0 text-muted">
+              La mejor forma de disfrutar tu primer viaje es no dejar todo para última hora.
+              Reserva con anticipación, revisa documentos, prepara una lista de cosas importantes
+              y guarda siempre copias de seguridad de lo necesario.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHECKLIST Y EMPAQUE -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- CHECKLIST -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100">
+
+            <div class="card-header text-white" style="background:#1b2a6b">
+              <h4 class="mb-0">
+                <i class="bi bi-list-ol me-2"></i>
+                Checklist de viaje
+              </h4>
+            </div>
+
+            <div class="card-body">
+              <p class="text-muted">
+                Antes de viajar revisa estas tareas importantes para evitar inconvenientes:
+              </p>
+
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Revisar que tu pasaporte o documento de identidad esté vigente</li>
+                <li class="list-group-item">Comprar boletos de avión, autobús o medio de transporte</li>
+                <li class="list-group-item">Reservar hotel, apartamento o alojamiento</li>
+                <li class="list-group-item">Investigar el clima del destino</li>
+                <li class="list-group-item">Preparar tu equipaje con tiempo</li>
+                <li class="list-group-item">Verificar requisitos migratorios o de entrada</li>
+                <li class="list-group-item">Guardar copias digitales de tus documentos</li>
+                <li class="list-group-item">Informar a un familiar o amigo sobre tu viaje</li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- QUÉ EMPACAR -->
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100">
+
+            <div class="card-header text-white" style="background:#e8630a">
+              <h4 class="mb-0">
+                <i class="bi bi-backpack2-fill me-2"></i>
+                Qué empacar
+              </h4>
+            </div>
+
+            <div class="card-body">
+              <p class="text-muted">
+                Estas son algunas cosas básicas que pueden hacer tu viaje más cómodo:
+              </p>
+
+              <ul class="list-group">
+                <li class="list-group-item">Ropa cómoda según el clima</li>
+                <li class="list-group-item">Zapatos adecuados para caminar</li>
+                <li class="list-group-item">Cargador de celular y batería portátil</li>
+                <li class="list-group-item">Documentos importantes y copias</li>
+                <li class="list-group-item">Dinero en efectivo y tarjetas</li>
+                <li class="list-group-item">Medicinas básicas o personales</li>
+                <li class="list-group-item">Artículos de higiene personal</li>
+                <li class="list-group-item">Botella reutilizable o termo</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTOS Y PRESUPUESTO -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <h3 class="fw-bold mb-3">
+                <i class="bi bi-file-earmark-text me-2 text-primary"></i>
+                Documentos importantes
+              </h3>
+              <p class="text-muted">
+                Antes de salir revisa qué documentos necesitas para entrar al país o moverte dentro del destino.
+                Tener todo preparado puede evitar retrasos, multas o inconvenientes en aeropuertos y terminales.
+              </p>
+              <ul class="text-muted">
+                <li>Pasaporte o cédula vigente</li>
+                <li>Boletos y confirmaciones de reserva</li>
+                <li>Seguro de viaje, si aplica</li>
+                <li>Dirección del alojamiento</li>
+                <li>Visa o permisos especiales, si son requeridos</li>
+                <li>Copias digitales guardadas en tu celular o correo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4">
+              <h3 class="fw-bold mb-3">
+                <i class="bi bi-cash-coin me-2 text-warning"></i>
+                Presupuesto del viaje
+              </h3>
+              <p class="text-muted">
+                Llevar un presupuesto te ayuda a controlar mejor tus gastos y a disfrutar sin preocupaciones.
+                Divide tu dinero entre transporte, alojamiento, comida, actividades y emergencias.
+              </p>
+              <ul class="text-muted">
+                <li>Reserva una parte para imprevistos</li>
+                <li>Compara precios antes de comprar</li>
+                <li>No lleves todo tu dinero en un solo lugar</li>
+                <li>Usa apps para controlar tus gastos</li>
+                <li>Calcula cuánto gastarás al día</li>
+                <li>Investiga si conviene cambiar moneda antes o durante el viaje</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALOJAMIENTO Y TRANSPORTE -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Aspectos clave para organizar mejor tu viaje</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="p-4 shadow-sm rounded h-100 bg-white">
+            <h4 class="fw-bold mb-3">
+              <i class="bi bi-building me-2 text-primary"></i>
+              Elegir alojamiento
+            </h4>
+            <p class="text-muted">
+              Busca un lugar que esté bien ubicado, tenga buenas reseñas y ofrezca seguridad.
+              A veces lo más barato no siempre es lo más conveniente, especialmente si queda
+              muy lejos de los lugares que quieres visitar.
+            </p>
+            <p class="text-muted mb-0">
+              Revisa si incluye desayuno, wifi, aire acondicionado, transporte o políticas de cancelación.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="p-4 shadow-sm rounded h-100 bg-white">
+            <h4 class="fw-bold mb-3">
+              <i class="bi bi-bus-front me-2 text-warning"></i>
+              Transporte en el destino
+            </h4>
+            <p class="text-muted">
+              Investiga cómo moverte en la ciudad antes de llegar. Algunas ciudades tienen metro,
+              autobuses, taxis, apps de transporte o alquiler de bicicletas.
+            </p>
+            <p class="text-muted mb-0">
+              Saber esto con anticipación te ahorrará tiempo, dinero y confusión durante el viaje.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGURIDAD Y TECNOLOGÍA -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body p-4">
+              <h3 class="fw-bold mb-3">
+                <i class="bi bi-shield-check me-2 text-success"></i>
+                Seguridad durante el viaje
+              </h3>
+              <p class="text-muted">
+                Mantenerte atento y tomar decisiones prudentes hará que tu experiencia sea mucho más tranquila.
+              </p>
+              <ul class="text-muted">
+                <li>No muestres objetos de valor innecesariamente</li>
+                <li>Guarda tus documentos en un lugar seguro</li>
+                <li>Comparte tu ubicación o itinerario con alguien de confianza</li>
+                <li>Evita caminar solo en zonas desconocidas de noche</li>
+                <li>Usa solo transportes confiables</li>
+                <li>Mantén tu celular cargado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body p-4">
+              <h3 class="fw-bold mb-3">
+                <i class="bi bi-phone me-2 text-primary"></i>
+                Tecnología y apps útiles
+              </h3>
+              <p class="text-muted">
+                Algunas aplicaciones pueden ayudarte a ubicarte, traducir idiomas, encontrar restaurantes
+                o revisar reservas rápidamente.
+              </p>
+              <ul class="text-muted">
+                <li>Mapas para ubicar rutas y direcciones</li>
+                <li>Traductor para comunicarte mejor</li>
+                <li>Apps de transporte o taxi</li>
+                <li>Correo o nube para guardar documentos</li>
+                <li>Apps para clima y alertas</li>
+                <li>Apps bancarias para revisar movimientos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSEJOS EXTRA -->
+  <section class="py-5">
+    <div class="container">
+
+      <h2 class="text-center fw-bold mb-5">Consejos extra</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-shield-check fs-1 text-primary"></i>
+            <h5 class="mt-3">Seguro de viaje</h5>
+            <p class="small text-muted">
+              Puede ayudarte en casos de enfermedad, retrasos, pérdida de equipaje o emergencias.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-phone fs-1 text-warning"></i>
+            <h5 class="mt-3">Apps útiles</h5>
+            <p class="small text-muted">
+              Usa mapas, traductor, conversor de moneda y aplicaciones para reservar actividades.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-camera fs-1 text-primary"></i>
+            <h5 class="mt-3">Toma fotos</h5>
+            <p class="small text-muted">
+              Guarda recuerdos especiales, pero sin olvidar disfrutar el momento y el lugar.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="text-center p-4 bg-white rounded shadow-sm h-100">
+            <i class="bi bi-people fs-1 text-warning"></i>
+            <h5 class="mt-3">Respeta el lugar</h5>
+            <p class="small text-muted">
+              Cuida el ambiente, respeta las normas locales y valora la cultura del destino.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPS FINALES -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Disfruta la experiencia</h2>
+      <p class="mb-0">
+        Viajar no solo significa llegar a un destino, sino aprender, descubrir y crear recuerdos.
+        Planifica bien, mantente organizado y aprovecha cada momento de tu aventura.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+<div class="container">
+<div class="row">
+
+<div class="col-md-4">
+<h4 class="footer-logo">Travel Starter Guide</h4>
+<p>
+Tu guía para empezar a explorar el mundo y organizar tu primer viaje.
+</p>
+</div>
+
+<div class="col-md-4">
+<h5>Navegación</h5>
+<ul class="footer-links">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="empieza.html">Empieza aquí</a></li>
+<li><a href="guide.html">Guía</a></li>
+<li><a href="news.html">Noticias</a></li>
+<li><a href="contact.html">Contacto</a></li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h5>Síguenos</h5>
+
+<div class="footer-social">
+<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+<a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+<a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a>
+</div>
+
+<p class="footer-email">
+<a href="mailto:travelstarterguide@email.com">
+<i class="bi bi-envelope"></i> travelstarterguide@email.com
+</a>
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="footer-copy">© 2026 Travel Starter Guide</p>
+
+</div>
+</footer>
+  <!-- MODAL PRIVACIDAD -->
+  <div class="modal fade" id="privacidad">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Política de Privacidad</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            Este sitio web es educativo y no almacena información personal
+            de los usuarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
